@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+
+/* font section */
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+
+
+
+/* nav section */
+nav{
+    /* border: 3px solid red; */
+    max-width: 1140px;
+    height: 71px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.nav-logo{
+   max-width: 135px;
+   height: 82px;
+}
+
+.list-container{
+    width: 415px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 2px solid blue; */
+
+
+}
+
+.nav-a{
+    text-decoration: none;
+    color:rgba(37, 36, 50, 1);
+
+}
+
+.nav-b{
+    color:rgba(137, 135, 161, 1) ;
+    text-decoration: none;
+}
+
+/* hero section */
+.hero-container{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    height: 450px;
+    margin: 0 auto;
+
+}
+
+.hero-title-section{
+    max-width: 570px;
+    height:300px;
+    /* overflow: hidden; */
+    /* border: 2px solid peru; */
+    /* text-align: center; */
+}
+
+.title-span{
+    color: rgba(233, 90, 8, 1);
+    font-size:4.1rem;
+    font-weight: 700;
+}
+
+.hero-title-text{
+     font-size:4.1rem;
+    font-weight: 700;
+}
+
+.hero-sub-title{
+    color: rgba(0, 0, 0, 0.5);
+    height: 108px;
+    font-size: 1.6rem;
+    
+}
+
+
+.hero-image{
+    box-sizing:content-box;
+    display: block;
+}
+
+
+
+
+/***********Media screen for small device*************/
+
+@media screen and (max-width:576px) {
+    
+/* nav section */
+
+.list-container .nav-list:not(:last-child){
+    display: none;
+    
+}
+
+nav{
+   
+    display: flex;
+     align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    padding: 10px;
+}
+
+
+.list-container{
+    width: 150px;
+    
+    /* border: 2px solid red; */
+}
+
+
+    .nav-c{
+        font-size: 1.2rem;
+    }
+
+
+
+    .hero-container{
+        flex-direction: column-reverse;
+        margin-top: 100px;
+        width:537px;
+        height: 744px;
+    }
+
+    .hero-title-section{
+       margin-bottom:100px;
+       margin-top:50px;
+       width: 100%;
+    }
+
+    .hero-image{
+        width: 100%;
+    }
+
+}
