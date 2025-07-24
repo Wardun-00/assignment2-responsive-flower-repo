@@ -83,7 +83,7 @@ nav{
 .hero-section{
     /* border: 2px solid blue; */
     max-width: 1140px;
-    margin-top:100px;
+    margin-top:50px;
     align-items: center;
 }
 
@@ -548,6 +548,7 @@ nav{
    /* border: 2px solid red; */
    background-size: cover;
    /* margin-right: 50px; */
+   margin-top: -50px;
 
 }
 
