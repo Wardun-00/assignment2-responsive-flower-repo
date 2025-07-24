@@ -27,6 +27,13 @@ body{
 
 /* shared items */
 
+.hide{
+    display: none;
+}
+
+
+
+
 .flex{
     display: flex;
 }
@@ -213,7 +220,7 @@ nav{
 /* latest deal section */
 
 .latest-deal-title{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     max-width: 1140px;
     text-align: center;
     margin-top:120px;
@@ -279,7 +286,7 @@ nav{
     gap: 20px;
     margin:0 auto;
     margin-top: 40px;
-    border:2px solid brown;
+    /* border:2px solid brown; */
   
 }
 
@@ -319,9 +326,9 @@ nav{
     }
 
 
-    /* .hero-image{
-        width:400px;
-    } */
+   .hero-image{
+    width:385px;
+   }
     
 
     /* cards */
@@ -349,8 +356,12 @@ nav{
     .card-sub-container{
         margin-left:10px;
         width: 165px;
+        padding: 5px;
     }
 
+    .nav-c{
+        margin-right: 20px;
+    }
     .card-btn{
         width: 100%;
     }
@@ -360,12 +371,22 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid red; */
-    /* text-align: center; */
-    margin-top: 80px;
-    
+    margin-top:80px;
+    padding: 10px;
+    /* box-shadow: 1px 2px 3px black; */
 
    }
+
+   /* last deal image text*/
+   .off-container{
+    margin-top:-30px;
+   }
+
+   .last-cnt{
+    margin-top: 10px;
+   }
+
+
 
    .flower-and-lover-title-container{
     margin-left:30px;
@@ -387,12 +408,18 @@ nav{
 .plant-price-offer-main{
     grid-template-columns:1fr;
     grid-template-rows: auto;
-    gap:15px;
-    border: 5px solid blue;
-    /* width:99%; */
-    /* margin:auto; */
+    gap:10px;
+    /* border: 2px solid blue; */
+    width:290px;
+   
    
 }
+
+
+.latest-deal-title{
+    width:90%;
+}
+
 
 .latest-image{
     width:100%; 
