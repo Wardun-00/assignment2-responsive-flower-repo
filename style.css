@@ -76,6 +76,8 @@ nav{
 .hero-section{
     /* border: 2px solid blue; */
     max-width: 1140px;
+    margin-top:100px;
+    align-items: center;
 }
 
 .hero-title-text{
@@ -100,7 +102,7 @@ nav{
 .our-plants-section{
     max-width:1140px;
     /* border: 2px solid brown; */
-    margin-top: 28px;
+    margin-top: 48px;
 }
 
 .our-plants-title{
@@ -208,9 +210,95 @@ nav{
 
 
 
+/* latest deal section */
+
+.latest-deal-title{
+    border: 2px solid red;
+    max-width: 1140px;
+    text-align: center;
+    margin-top:120px;
+}
+
+.latest-deal-title-text{
+    font-size: 3.12rem;
+    font-weight: 700;
+}
+
+.latest{
+    color:rgba(233, 90, 8, 1);
+}
+
+.latest-deal-passage{
+    font-size: 1.4rem;
+    color:rgba(0, 0, 0, 0.5);
+}
+
+/* latest deal offer price image */
+
+.latest-image-container{
+    position: relative;
+    /* border: 2px solid red; */
+}
+
+.latest-image{
+    border-radius: 22px;
+}
 
 
+.off-container{
+    position: absolute;
+    top:90px;
+    left:50px;
+    text-align: center;
+}
 
+.offer-price, .offer-btn{
+    color:white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    
+}
+
+.offer-price-last{
+    position:relative;
+    left:200px;
+    top: 100px;
+}
+
+.offer-btn-last{
+    position: relative;
+    left: 200px;
+    top:100px;
+}
+
+.plant-price-offer-main{
+    max-width: 1140px;
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    margin:0 auto;
+    margin-top: 40px;
+    border:2px solid brown;
+  
+}
+
+.plant-price-offer-main .latest-image-container:nth-child(1) {
+    grid-column: 1 / 2; 
+    grid-row: 1 / 2;    
+}
+
+
+.plant-price-offer-main .latest-image-container:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;    
+}
+
+.plant-price-offer-main .latest-image-container:nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;   
+
+}
 
 /* *********For small device******* */
 
@@ -230,6 +318,10 @@ nav{
         padding: 5px;
     }
 
+
+    /* .hero-image{
+        width:400px;
+    } */
     
 
     /* cards */
@@ -288,6 +380,67 @@ nav{
    .image-tag{
     display: none;
    }
+
+
+/* latest deal section */
+
+.plant-price-offer-main{
+    grid-template-columns:1fr;
+    grid-template-rows: auto;
+    gap:15px;
+    border: 5px solid blue;
+    /* width:99%; */
+    /* margin:auto; */
+   
+}
+
+.latest-image{
+    width:100%; 
+    /* border: 2px solid red; */
+}
+
+  .plant-price-offer-main .latest-image-container:nth-child(1),
+  .plant-price-offer-main .latest-image-container:nth-child(2),
+  .plant-price-offer-main .latest-image-container:nth-child(3) {
+    grid-column: auto; 
+    grid-row: auto; 
+    /* background-color: red;    */
+   
+  }
+
+
+.offer-price {
+    font-size: 1.4rem;
+  }
+
+  .offer-btn {
+    font-size: 1rem;
+  }
+
+.plant-price-offer-main .latest-image-container {
+     grid-column: auto; 
+     grid-row: auto;    
+     height: 250px;     
+     
+  }
+
+  .last-cnt{
+    position: relative;
+  }
+
+.offer-price-last{
+    position:relative;
+    left:-50px;
+    top: -200px;
+}
+
+.offer-btn-last{
+   
+    left:-50px;
+    top: -200px;
+}
+
+
 }
 
 
